@@ -3,6 +3,7 @@
 ---
 
 _serverlist.txt_ - should have the list of all nodes to start stunnel
+
 _stunnel-header.conf_ - common stunnel parameters
 
 ---
@@ -14,5 +15,6 @@ _stunnel-header.conf_ - common stunnel parameters
 
 **Usage:**
 
-1. Enter node internal ip to INT*IP variable in \_config-stunnel.sh*. If NAT is ussed between the nodes, use EXT_IP paparameter
-2. start _config-stunnel.sh_ script
+1. Make sure that serverlist.txt is up to date
+1. Enter node internal ip to INT_IP variable in _config-stunnel.sh_. If NAT is used between the nodes, use EXT_IP parameter
+1. start _config-stunnel.sh_ script
