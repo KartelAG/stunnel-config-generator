@@ -1,1 +1,1 @@
-# stunnel-generate-config
+# stunnel-config-generator
