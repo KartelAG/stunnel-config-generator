@@ -12,6 +12,7 @@ _stunnel-header.conf_ - common stunnel parameters
 
 1. python3.5 or higher
 2. your user should be in sudoers (because iptables is used to redirect traffic)
+3. you should have two certs in containers _\\.\HDIMAGE\server_ and _\\.\HDIMAGE\client_ and in files _server.cer_ and _client.cer_ (_cert_ param in _stunnel-full.conf_)
 
 **Usage:**
 
