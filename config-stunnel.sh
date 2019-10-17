@@ -32,4 +32,4 @@ cat ./out/stunnel.conf >> ./out/stunnel-full.conf
 #  ./create-certs.sh  
 #fi
 
-sudo /opt/cprocsp/sbin/amd64/stunnel_thread ./out/stunnel.conf
+sudo /opt/cprocsp/sbin/amd64/stunnel_thread ./out/stunnel-full.conf
