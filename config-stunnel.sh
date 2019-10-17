@@ -13,7 +13,7 @@ echo "#!/bin/bash" > ./out/iptables-rules.sh
 cat ./out/iptables.tmp >> ./out/iptables-rules.sh
 cat ./out/iptables-rules.txt >> ./out/iptables-rules.sh
 
-chmod +x .out//iptables-rules.sh
+chmod +x ./out/iptables-rules.sh
 sudo ./out/iptables-rules.sh
 
 cat stunnel-header.conf > ./out/stunnel-full.conf
