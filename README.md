@@ -17,5 +17,6 @@ _stunnel-header.conf_ - common stunnel parameters
 **Usage:**
 
 1. Make sure that serverlist.txt is up to date
+1. Correct _stunnel-header.conf_ with your paths to pid and stunnel log
 1. Enter node internal ip to INT_IP variable in _config-stunnel.sh_. If NAT is used between the nodes, use EXT_IP parameter
 1. start _config-stunnel.sh_ script
