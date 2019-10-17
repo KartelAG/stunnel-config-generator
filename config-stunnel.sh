@@ -17,7 +17,7 @@ chmod +x ./out/iptables-rules.sh
 sudo ./out/iptables-rules.sh
 
 cat stunnel-header.conf > ./out/stunnel-full.conf
-cat stunnel.conf >> ./out/stunnel-full.conf
+cat ./out/stunnel.conf >> ./out/stunnel-full.conf
 
 #
 # Uncomment this to generate keys with script
