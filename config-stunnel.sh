@@ -19,13 +19,17 @@ sudo ./out/iptables-rules.sh
 cat stunnel-header.conf > ./out/stunnel-full.conf
 cat stunnel.conf >> ./out/stunnel-full.conf
 
-read -p "Do you want to generate server and client certs? [y/n] " -n 1 -r
-echo    # (optional) move to a new line
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-  /opt/cprocsp/bin/amd64/certmgr -inst -f ./cacerts.p7b -all -store uRoot
-  chmod +x ./create-certs.sh
-  ./create-certs.sh  
-fi
+#
+# Uncomment this to generate keys with script
+# If you are using certificate generation script "as is", you should correct "verify" parameter in stunnel-full.conf from '2' to '0' 
+#
+#read -p "Do you want to generate server and client certs? [y/n] " -n 1 -r
+#echo    # (optional) move to a new line
+#if [[ $REPLY =~ ^[Yy]$ ]]
+#then
+#  /opt/cprocsp/bin/amd64/certmgr -inst -f ./cacerts.p7b -all -store uRoot
+#  chmod +x ./create-certs.sh
+#  ./create-certs.sh  
+#fi
 
 sudo /opt/cprocsp/sbin/amd64/stunnel_thread ./out/stunnel.conf
